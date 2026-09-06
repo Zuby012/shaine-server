@@ -4,13 +4,38 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
-    "express": "^5.2.1"
+    "@better-auth/mongo-adapter": "^1.7.2",
+    "better-auth": "^1.7.2",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.4.1",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  },
+  "allowScripts": {
+    "typescript@7.0.2": true,
+    "tsx@4.23.13": true,
+    "@types/node@26.4.1": true,
+    "@types/express@5.0.6": true,
+    "better-auth@1.7.2": true,
+    "mongodb@7.6.0": true,
+    "@better-auth/mongo-adapter@1.7.2": true,
+    "cors@2.8.6": true,
+    "dotenv@17.4.2": true
   }
 }
