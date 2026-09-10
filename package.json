@@ -5,21 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx watch src/index.ts",
     "build": "tsc",
+    "dev": "nodemon index.js",
     "start": "node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
   "dependencies": {
     "@better-auth/mongo-adapter": "^1.7.2",
     "better-auth": "^1.7.2",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "mongodb": "^7.6.0"
+    "mongodb": "^7.6.0",
+    "nodemon": "^3.1.14",
+    "socket.io": "^4.8.3"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
@@ -36,6 +38,8 @@
     "mongodb@7.6.0": true,
     "@better-auth/mongo-adapter@1.7.2": true,
     "cors@2.8.6": true,
-    "dotenv@17.4.2": true
+    "dotenv@17.4.2": true,
+    "socket.io@4.8.3": true,
+    "nodemon@3.1.14": true
   }
 }
