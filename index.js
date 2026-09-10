@@ -25,12 +25,12 @@ try {
         socket.on('send_message', (data)=>{
             data.deliveredAt = `${now.getHours()}:${now.getMinutes()}`
             io.to(data.roomId).emit("receive_message", data)
-            console.log(data)
+            //console.log(data)
         })
 
         socket.on('join_room', (data)=>{
             socket.join(data)
-            console.log(`user ${socket.id} joined room ${data}`)
+            //console.log(`user ${socket.id} joined room ${data}`)
         })
     })
 } catch (error) {
